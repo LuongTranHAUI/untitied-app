@@ -9,7 +9,10 @@ import 'constants/routes.dart';
 import 'firebase_options.dart';
 
 void main() {
+  // Ensure widget system initialized before executing dependency actions
+  // Before using runApp()
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(MaterialApp(
     title: 'Flutter Demo',
     theme: ThemeData(
